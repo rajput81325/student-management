@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizConnect</title>
+    <title>BizConnect - Your Business Network</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">BizConnect</a>
+            <a class="navbar-brand fw-bold" href="/">BizConnect</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link active" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -28,43 +32,68 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="/register">Register</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section bg-primary text-white text-center py-5">
+    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center" 
+        style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/public/images/hero-bg.jpg') center/cover; height: 100vh;">
         <div class="container">
-            <h1 class="display-4">Welcome to BizConnect</h1>
-            <p class="lead">Connect with Business Owners, Co-Founders, and Workers Near You!</p>
-            <a href="/register" class="btn btn-light btn-lg">Get Started</a>
+            <h1 class="display-3 fw-bold">Welcome to BizConnect</h1>
+            <p class="lead">Find Business Owners, Co-Founders & Investors in One Place</p>
+            <a href="/register" class="btn btn-light btn-lg mt-3 shadow-sm">Get Started</a>
         </div>
-    </section>
+    </header>
 
     <!-- Features Section -->
-    <section class="features-section py-5">
+    <section class="features-section py-5 bg-light">
         <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Why Choose BizConnect?</h2>
             <div class="row text-center">
-                <div class="col-md-4">
-                    <h3>Location-Based Matching</h3>
-                    <p>Find partners and workers near you.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100 feature-card">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                        <h3>Location-Based Matching</h3>
+                        <p>Find partners and workers near you with ease.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Investor Inclusion</h3>
-                    <p>Connect with investors for funding.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100 feature-card">
+                        <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                        <h3>Investor Inclusion</h3>
+                        <p>Connect with investors and grow your business.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>AI-Based Matching</h3>
-                    <p>Smart recommendations for better connections.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100 feature-card">
+                        <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                        <h3>AI-Based Matching</h3>
+                        <p>Smart recommendations for meaningful connections.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class="cta-section text-center text-white py-5" style="background: linear-gradient(135deg, #6a11cb, #2575fc);">
+        <div class="container">
+            <h2 class="fw-bold">Start Connecting Today!</h2>
+            <p class="lead">Join thousands of professionals growing their businesses.</p>
+            <a href="/register" class="btn btn-light btn-lg shadow-sm">Join Now</a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 BizConnect. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 BizConnect. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
